@@ -192,6 +192,10 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
                 }, 0)
             }).emulateTransitionEnd(i.TRANSITION_DURATION)) : (n.removeClass("active"), s.addClass("active"), this.sliding = !1, this.$element.trigger(c)), a && this.cycle(), this
         }
+
+        if (this.$element.trigger(d), !d.isDefaultPrevented()) {
+            
+        }
     };
     var o = t.fn.carousel;
     t.fn.carousel = e, t.fn.carousel.Constructor = i, t.fn.carousel.noConflict = function () {
